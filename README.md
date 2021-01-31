@@ -152,3 +152,6 @@ Tip
     ![주문 서비스 구현1](https://user-images.githubusercontent.com/62634760/106377395-0bfebc80-63e0-11eb-83f5-98450ceec349.PNG)
     ![주문 서비스 구현 2](https://user-images.githubusercontent.com/62634760/106377396-0c975300-63e0-11eb-9398-10fa8b5644d6.PNG)
 
+  - 테스트
+    ![테스트](https://user-images.githubusercontent.com/62634760/106377475-9a733e00-63e0-11eb-832b-9aea7bd04568.PNG)
+
