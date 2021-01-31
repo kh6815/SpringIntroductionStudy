@@ -187,13 +187,18 @@ Tip
 
 
 - 컨테이너에 등록된 모든 빈 조회
- 
+
+  ![캡처](https://user-images.githubusercontent.com/62634760/106386453-5d2aa280-6418-11eb-9161-d4f4fdb7e8d5.PNG)
 
 
 - 스프링 빈 조회
   - ac.getBean(빈이름, 타입)
   - ac.getBean(타입)
 
+    ![캡처1](https://user-images.githubusercontent.com/62634760/106386455-5e5bcf80-6418-11eb-8799-aa9e15de37e5.PNG)
+
 
 - 스프링 빈 조회(동일한 타입이 둘 일때)
-  
+  ![캡처2](https://user-images.githubusercontent.com/62634760/106386456-5ef46600-6418-11eb-8392-0df66ebb0342.PNG)
+  ![캡처2-1](https://user-images.githubusercontent.com/62634760/106386457-5f8cfc80-6418-11eb-9702-453db92c2cd2.PNG)
+
