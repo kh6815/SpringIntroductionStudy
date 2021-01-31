@@ -100,3 +100,18 @@ Tip
      ![캡처](https://user-images.githubusercontent.com/62634760/106376380-30ef3180-63d8-11eb-92e4-5efe3d0f694a.PNG)
 
 - 회원 도메인 설계 
+  ![캡처](https://user-images.githubusercontent.com/62634760/106376944-cf7d9180-63dc-11eb-8d29-ada781a1d5d7.PNG)
+  ![캡처1](https://user-images.githubusercontent.com/62634760/106376945-d0162800-63dc-11eb-894f-5a0f80db3d1c.PNG)
+  
+  - 회원 등급 enum class
+  
+  - 회원 엔티티
+  
+  - 회원 저장소 인터페이스와 메모리 회원 저장소 구현체
+
+  - 회원 서비스 인터페이스와 회원 서비스 구현체
+
+  - 테스트 코드
+
+    
+ 
