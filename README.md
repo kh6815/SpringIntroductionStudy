@@ -159,3 +159,6 @@ Tip
   - 현재 작성되어진 내용으로는 제대로된 객체지향 프로그래밍이 아니다.
   - 클라이언트가 인터페이스에 의존하지않고 해당 구현 서비스에 직접 접근하고 있다.
   - 때문에 AppCnfig 클래스를 만들어 해당 클래스에서 구현객체들을 설정하고 사용하자.
+
+    ![캡처](https://user-images.githubusercontent.com/62634760/106379199-a31e4100-63ed-11eb-9fc7-4e0e1aab4ad5.PNG)
+    ![캡처1](https://user-images.githubusercontent.com/62634760/106379200-a44f6e00-63ed-11eb-8dfb-e11dd0367119.PNG)
