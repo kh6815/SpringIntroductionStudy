@@ -131,4 +131,7 @@ Tip
 
 
 - 주문과 할인 도메인 설계
-    
+
+  ![캡처](https://user-images.githubusercontent.com/62634760/106377219-005ec600-63df-11eb-9db5-d9a01eb757fa.PNG)
+  ![캡처1](https://user-images.githubusercontent.com/62634760/106377220-00f75c80-63df-11eb-878a-00d6d03522f9.PNG)
+  ![캡처2](https://user-images.githubusercontent.com/62634760/106377221-018ff300-63df-11eb-83a6-2563f942cb03.PNG)
