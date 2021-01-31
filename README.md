@@ -162,3 +162,5 @@ Tip
 
     ![캡처](https://user-images.githubusercontent.com/62634760/106379199-a31e4100-63ed-11eb-9fc7-4e0e1aab4ad5.PNG)
     ![캡처1](https://user-images.githubusercontent.com/62634760/106379200-a44f6e00-63ed-11eb-8dfb-e11dd0367119.PNG)
+
+  - 테스트 코드에서 @BeforeEach(각 Test 실행전에 먼저 동작) 애노테이션을 사용해서 Appconfig에 등록해놓은 구현 객체를 가져와 사용한다.
