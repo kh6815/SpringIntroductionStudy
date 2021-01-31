@@ -102,6 +102,7 @@ Tip
 
 
 - 회원 도메인 설계
+
     ![캡처](https://user-images.githubusercontent.com/62634760/106376944-cf7d9180-63dc-11eb-8d29-ada781a1d5d7.PNG)
     ![캡처1](https://user-images.githubusercontent.com/62634760/106376945-d0162800-63dc-11eb-894f-5a0f80db3d1c.PNG)
   
@@ -110,16 +111,20 @@ Tip
     ![회원 등급](https://user-images.githubusercontent.com/62634760/106377082-ce009900-63dd-11eb-8afa-ef5cdcc4853d.PNG)
 
   - 회원 엔티티
+
     ![회원 엔티티](https://user-images.githubusercontent.com/62634760/106377083-ce992f80-63dd-11eb-9de5-2835649ebad0.PNG)
 
   - 회원 저장소 인터페이스와 메모리 회원 저장소 구현체
+
     ![회원 저장소 인터페이스](https://user-images.githubusercontent.com/62634760/106377084-cf31c600-63dd-11eb-82fb-3de815592cb9.PNG)
     ![메모리 회원 저장소 구현체](https://user-images.githubusercontent.com/62634760/106377085-cf31c600-63dd-11eb-95ae-07d8d2f51234.PNG)
 
   - 회원 서비스 인터페이스와 회원 서비스 구현체
+
     ![회원 서비스 인터페이스](https://user-images.githubusercontent.com/62634760/106377086-cfca5c80-63dd-11eb-96db-6bee56450591.PNG)
     ![회원 서비스 구현체](https://user-images.githubusercontent.com/62634760/106377087-d062f300-63dd-11eb-9abb-1d54742198c4.PNG)
 
   - 테스트 코드
+
     ![테스트](https://user-images.githubusercontent.com/62634760/106377088-d0fb8980-63dd-11eb-8a4f-e2fd02482033.PNG)
     
