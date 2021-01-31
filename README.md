@@ -168,3 +168,5 @@ Tip
   - AppConfig에 @Configuration의 애노테이션을 통해 설정정보라고 설정하고, 구현객체 메서드에 @Bean 애노테이션을 달아서 스프링 컨테이너에 등록시킨다.
     - ApplicationContext(스프링 컨테이너)에서 저장된 구현 객체 Bean을 불러와 사용하면 편리한 의존관계 주입을 사용할 수 있다.
 
+     ![캡처2](https://user-images.githubusercontent.com/62634760/106379482-b205f300-63ef-11eb-86e2-73be34881874.PNG)
+     ![캡처3](https://user-images.githubusercontent.com/62634760/106379483-b29e8980-63ef-11eb-9678-1fb246819ddc.PNG)
