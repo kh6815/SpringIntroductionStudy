@@ -206,9 +206,16 @@ Tip
 - ApplicationContext는 BeanFactory의 기능을 상속받는다.
 - ApplicationContext는 빈 관리기능 + 편리한 부가 기능을 제공하기 때문에 BeanFactory를 직접 사용할 일은 거의 없다.
 - BeanFactory나 ApplicationContext를 스프링 컨테이너라 한다.
-  
+
+  ![캡처](https://user-images.githubusercontent.com/62634760/106386753-e42c4a80-6419-11eb-8619-995a63f2037f.PNG)
+
+
+
 
 스프링 컨테이너는 다양한 형식의 설정 정보를 받아드릴 수 있게 유연하게 설계되어 있다.
  - xml파일을 설정정보 파일로 설정하여 스프링 컨테이너 사용해보기
  - 기존 AppConfig 설정정보와 비슷하다는 걸 알 수 있다.
 
+   ![캡처1](https://user-images.githubusercontent.com/62634760/106386754-e4c4e100-6419-11eb-914b-e4e7b0c1914d.PNG)
+   ![캡처2](https://user-images.githubusercontent.com/62634760/106386755-e55d7780-6419-11eb-9440-b0ca271274d8.PNG)
+   ![캡처2-1](https://user-images.githubusercontent.com/62634760/106386756-e5f60e00-6419-11eb-95e4-d29317e9ab32.PNG)
