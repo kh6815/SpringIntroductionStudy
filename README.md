@@ -127,4 +127,8 @@ Tip
   - 테스트 코드
 
     ![테스트](https://user-images.githubusercontent.com/62634760/106377088-d0fb8980-63dd-11eb-8a4f-e2fd02482033.PNG)
+
+
+
+- 주문과 할인 도메인 설계
     
