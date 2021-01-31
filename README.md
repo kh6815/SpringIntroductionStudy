@@ -180,3 +180,20 @@ Tip
 - new AnnotationConfigApplicationContext(AppConfig.class) ->  이 클래스는 ApplicationContext 인터페이스 구현체이다. 
 - 스프링 컨테이너를 생성할 때는 구성 정보를 지정해주어야 하는데 여기서는 AppConfig.class를 구성 정보를 지정했다.
 
+  ![캡처](https://user-images.githubusercontent.com/62634760/106385943-0c19af00-6416-11eb-9ded-f1290e9a4428.PNG)
+
+- 스프링 컨테이너는 설정 정보를 참고해서 의존관계를 주입(DI)한다.
+- 단순히 자바 코드를 호출하는 것이 아니라 싱글톤으로 의존관계를 주입하여 사용할 수 있게 한다.
+
+
+- 컨테이너에 등록된 모든 빈 조회
+ 
+
+
+- 스프링 빈 조회
+  - ac.getBean(빈이름, 타입)
+  - ac.getBean(타입)
+
+
+- 스프링 빈 조회(동일한 타입이 둘 일때)
+  
