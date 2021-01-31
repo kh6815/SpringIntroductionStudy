@@ -164,3 +164,7 @@ Tip
     ![캡처1](https://user-images.githubusercontent.com/62634760/106379200-a44f6e00-63ed-11eb-8dfb-e11dd0367119.PNG)
 
   - 테스트 코드에서 @BeforeEach(각 Test 실행전에 먼저 동작) 애노테이션을 사용해서 Appconfig에 등록해놓은 구현 객체를 가져와 사용한다.
+  
+  - AppConfig에 @Configuration의 애노테이션을 통해 설정정보라고 설정하고, 구현객체 메서드에 @Bean 애노테이션을 달아서 스프링 컨테이너에 등록시킨다.
+    - ApplicationContext(스프링 컨테이너)에서 저장된 구현 객체 Bean을 불러와 사용하면 편리한 의존관계 주입을 사용할 수 있다.
+
