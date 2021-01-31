@@ -170,3 +170,13 @@ Tip
     - orderApp, memberApp을 통해 스프링 컨테이너 테스트 해보기
      ![캡처2](https://user-images.githubusercontent.com/62634760/106379482-b205f300-63ef-11eb-86e2-73be34881874.PNG)
      ![캡처3](https://user-images.githubusercontent.com/62634760/106379483-b29e8980-63ef-11eb-9678-1fb246819ddc.PNG)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+스프링 컨테이너와 스프링 빈
+
+- ApplicationContext를 스프링 컨테이너라 한다. 인터페이스이다.
+- new AnnotationConfigApplicationContext(AppConfig.class) ->  이 클래스는 ApplicationContext 인터페이스 구현체이다. 
+- 스프링 컨테이너를 생성할 때는 구성 정보를 지정해주어야 하는데 여기서는 AppConfig.class를 구성 정보를 지정했다.
+
