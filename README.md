@@ -135,3 +135,20 @@ Tip
   ![캡처](https://user-images.githubusercontent.com/62634760/106377219-005ec600-63df-11eb-9db5-d9a01eb757fa.PNG)
   ![캡처1](https://user-images.githubusercontent.com/62634760/106377220-00f75c80-63df-11eb-878a-00d6d03522f9.PNG)
   ![캡처2](https://user-images.githubusercontent.com/62634760/106377221-018ff300-63df-11eb-83a6-2563f942cb03.PNG)
+
+  - 할인 인터페이스 및 구현객체(정액 할인 정책, 정률 할인 정책)
+    
+    ![할인 인터페이스](https://user-images.githubusercontent.com/62634760/106377387-0903cc00-63e0-11eb-8eae-6ee1b0e28e4a.PNG)
+    ![정액할인 정책](https://user-images.githubusercontent.com/62634760/106377388-099c6280-63e0-11eb-99c7-922621a7718d.PNG)
+    ![정률할인 정책](https://user-images.githubusercontent.com/62634760/106377389-0a34f900-63e0-11eb-8eea-6038fb22c1a5.PNG)
+
+  - 주문 엔티티
+
+    ![주문 엔티티](https://user-images.githubusercontent.com/62634760/106377392-0acd8f80-63e0-11eb-86b3-330e9ccc5b04.PNG)
+
+  - 주문 인터페이스 및 구현객체
+
+    ![주문 인터페이스](https://user-images.githubusercontent.com/62634760/106377394-0b662600-63e0-11eb-8e4a-8b4d73961bc5.PNG)
+    ![주문 서비스 구현1](https://user-images.githubusercontent.com/62634760/106377395-0bfebc80-63e0-11eb-83f5-98450ceec349.PNG)
+    ![주문 서비스 구현 2](https://user-images.githubusercontent.com/62634760/106377396-0c975300-63e0-11eb-9398-10fa8b5644d6.PNG)
+
