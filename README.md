@@ -97,9 +97,11 @@ Tip
 
 - 스프링 부트 스타터 사이트로 이동해서 스프링 프로젝트 생성 : https://start.spring.io
   - 현업에서 요즘은 프로젝트는 Gradle로 사용
+
      ![캡처](https://user-images.githubusercontent.com/62634760/106376380-30ef3180-63d8-11eb-92e4-5efe3d0f694a.PNG)
 
 - 회원 도메인 설계 
+
   ![캡처](https://user-images.githubusercontent.com/62634760/106376944-cf7d9180-63dc-11eb-8d29-ada781a1d5d7.PNG)
   ![캡처1](https://user-images.githubusercontent.com/62634760/106376945-d0162800-63dc-11eb-894f-5a0f80db3d1c.PNG)
   
