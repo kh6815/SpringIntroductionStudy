@@ -487,3 +487,21 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
      ![캡처1](https://user-images.githubusercontent.com/62634760/106415640-eda5c900-6492-11eb-8890-ce299d333ce8.PNG)
      ![캡처1-1](https://user-images.githubusercontent.com/62634760/106415642-eed6f600-6492-11eb-9c40-73c882b798c9.PNG)
    - 해당 캡처에서는 ObjectProvider와 Provider를 동시에 작성했는데 실제 사용할 때는 한가지만 선택해서 사용하면 된다.
+
+
+
+
+웹 스코프 특징 
+ - 웹 스코프는 웹 환경에서만 동작한다.
+ - 웹 스코프는 프로토타입과 다르게 스프링이 해당 스코프의 종료시점까지 관리한다. 따라서 종료 메서드가
+호출된다.
+
+
+ - request 스코프는 스프링 컨테이너가 생성될 때 의존관계주입이 되는게 아니라 요청이 들어왔을 때만 의존관계주입이 됨으로 service단에서 MyLogger불러 쓸때 문제가 생긴다.
+ - 이를 해결하기 위해 Proxy를 사용하여 가짜 프록시 객체를 생성하고 미리 주입을 해둔다.
+ - MyLogger, , LogDemoService, LogDemoController를 통해 알아보자
+   - MyLogger
+
+   - LogDemoService
+
+   - LogDemoController
