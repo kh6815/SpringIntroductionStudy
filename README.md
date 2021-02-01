@@ -395,3 +395,16 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
 
 
 
+조회한 빈이 모두 필요할 때, List,Map을 사용하자
+ 
+
+ -로직 분석
+   -DiscountService는 Map으로 모든 DiscountPolicy를 주입받는다. 이때 fixDiscountPolicy, reateDiscountPolicy가 주입된다.
+ 
+ - 주입 분석
+   - Map<String, DiscountPolicy>: map의 키에 스프링 빈의 이름을 넣어주고, 그 값으로 DiscountPolicy타입으로 조회한 모든 스프링 빈을 담아준다.
+   - List<DiscountPolicy>:DiscountPolicy타입으로 조회한 모든 스프링 빈을 담아준다.
+   - 만약 해당하는 타입의 스프링 빈이 없으면, 빈 컬렉션이나 Map을 주입한다.
+
+
+
