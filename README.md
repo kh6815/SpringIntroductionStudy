@@ -424,8 +424,13 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
 
  - 콜백 첫번째 방법 : 빈 등록 초기화, 소멸 메서드 지정
    - 해당하는 NetworkClient 생성
+    
+     ![캡처](https://user-images.githubusercontent.com/62634760/106413374-4a05ea00-648d-11eb-87fd-e6053232f136.PNG)
+     ![캡처0-1](https://user-images.githubusercontent.com/62634760/106413378-4a9e8080-648d-11eb-9ae6-67822d408a48.PNG)
 
    - NetworkClient에서 초기화에 사용할 메서드 -> 설정정보파일에 initMethod에 등록, NetworkClient에서 소멸할때에 사용할 메서드 -> destoryMethod에 등록(@Bean(initMethod = "init", destoryMethod = "close"))
+
+     ![캡처0-2](https://user-images.githubusercontent.com/62634760/106413379-4b371700-648d-11eb-8d92-ac3e590ea2ca.PNG)
 
 
  - 콜백 두번째 방법 : 애노테이션 @PostConstruct, @PreDestory
@@ -434,5 +439,8 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
 
  - 정리
    - @PostConstruct, @PreDestory 애노테이션을 사용하자
-   - 코드를 고칠 수 없는 외부 라이브러리를 초기화, 종료해야 하면 @Bean 의 initMethod , destroyMethod
-를 사용하자.
+   - 코드를 고칠 수 없는 외부 라이브러리를 초기화, 종료해야 하면 @Bean 의 initMethod , destroyMethod를 사용하자.
+     
+     ![캡처1](https://user-images.githubusercontent.com/62634760/106413381-4bcfad80-648d-11eb-8755-8df432312588.PNG)
+     ![캡처1-2](https://user-images.githubusercontent.com/62634760/106413382-4c684400-648d-11eb-9c58-5b7b8dd1131e.PNG)
+
