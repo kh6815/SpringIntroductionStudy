@@ -340,6 +340,8 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
    - DI 프레임워크가 없으면 아무것도 할 수 없다.
    - 스프링 설정을 목적으로 하는 @Configuration 같은 곳에서만 특별한 용도로 사용
    - 사용하지 말자
+     
+     ![캡처](https://user-images.githubusercontent.com/62634760/106408956-d363ef00-6482-11eb-9f72-d22dbf8b4768.PNG)    
 
  - 일반 메서드 주입
    - 일반 메서드 주입, 잘 사용하지 않음.
@@ -348,7 +350,8 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
 옵션처리
  - 주입할 스프링 빈이 없어도 동작해야할 때가 있다.
  - 그런데 @Autowired만 사용하면 required옵션의 기본값이 true로 되어 있어서 자동 주입 대상이 없으면 오류가 발생한다.
-
+   
+   ![캡처1](https://user-images.githubusercontent.com/62634760/106408959-d3fc8580-6482-11eb-9073-92264d8c39d3.PNG)
 
 
 
@@ -357,23 +360,38 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
  - 최근에는 스프링을 포함한 DI 프레임워크 대부분이 생성자 주입을 권장 
  - 또한 의존관계 주입이 필요한 객체에 final키워드를 사용해서 생성자에서 혹시라도 값이 설정되지 않는 오류를 컴파일 시점에서 막게하자.
 
+   ![캡처2](https://user-images.githubusercontent.com/62634760/106408960-d4951c00-6482-11eb-911b-40e17e443657.PNG)
+
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 롬복과 최신 트랜드
  - 롬복의 @RequiedArgsConstructor를 통해 생성자를 생략할 수 있다.
  - 의존관계가 필요한 객체에 final로 자동의존관계 주입이 가능하게 바꿀 수 있다.
-
+   
+   ![캡처3](https://user-images.githubusercontent.com/62634760/106408961-d52db280-6482-11eb-922d-b4c11917fed5.PNG)
 
 
 
  -@Autowired를 사용할 때 조회 대상 빈이 2개 이상일 때 해결방법
    - Autowired 필드 명 매칭
      - @Autowired는 타입 매칭을 시도하고, 이때 여러 빈이 있으면 필드 이름, 파라미터 이름으로 빈 이름을 추가 매칭한다.
+   
+       ![캡처4](https://user-images.githubusercontent.com/62634760/106408962-d52db280-6482-11eb-8f94-89b0bc04b7ac.PNG)
 
    - Qualifier -> @Qualifier끼리 매칭 -> 빈 이름 매칭
      - 빈 등록시에 @Qualifier를 붙여준다.
+     
+       ![캡처5](https://user-images.githubusercontent.com/62634760/106408963-d5c64900-6482-11eb-842c-1502cde766a8.PNG)
 
      - 주입시에 @Qualifier를 붙여주고 등록한 이름을 적어준다.
    
+       ![캡처6](https://user-images.githubusercontent.com/62634760/106408964-d5c64900-6482-11eb-90b2-dcd6d79bbc84.PNG)
+
    - @Primary 사용
      - 빈에 등록할 때 @Primary를 줘서 우선순위를 준다.
+
+
+
+
