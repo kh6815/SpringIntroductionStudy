@@ -481,3 +481,9 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
    - ObjectProvider 의 getObject() 를 호출하면 내부에서는 스프링 컨테이너를 통해 해당 빈을 찾아서 반
 환한다. (DL)
 
+   - 또는 JSR-330 Provider라는 자바 표준 사용하는 방법
+   - javax.inject:javax.inject:1 라이브러리를 gradle에 추가해야 한다.
+ 
+     ![캡처1](https://user-images.githubusercontent.com/62634760/106415640-eda5c900-6492-11eb-8890-ce299d333ce8.PNG)
+     ![캡처1-1](https://user-images.githubusercontent.com/62634760/106415642-eed6f600-6492-11eb-9c40-73c882b798c9.PNG)
+![캡처1-1](https://user-images.githubusercontent.com/62634760/106415642-eed6f600-6492-11eb-9c40-73c882b798c9.PNG)
