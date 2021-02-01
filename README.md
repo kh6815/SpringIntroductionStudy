@@ -437,10 +437,13 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
    - NetworkClient에 콜백에 사용할 메서드에 @PostConstruct(초기화), @PreDestory(소멸 전)를 붙이기
    - 설정정보에서는 그대로 사용하면됨.
 
+     ![캡처1](https://user-images.githubusercontent.com/62634760/106413381-4bcfad80-648d-11eb-8755-8df432312588.PNG)
+     ![캡처1-2](https://user-images.githubusercontent.com/62634760/106413382-4c684400-648d-11eb-9c58-5b7b8dd1131e.PNG)
+
+
  - 정리
    - @PostConstruct, @PreDestory 애노테이션을 사용하자
    - 코드를 고칠 수 없는 외부 라이브러리를 초기화, 종료해야 하면 @Bean 의 initMethod , destroyMethod를 사용하자.
      
-     ![캡처1](https://user-images.githubusercontent.com/62634760/106413381-4bcfad80-648d-11eb-8755-8df432312588.PNG)
-     ![캡처1-2](https://user-images.githubusercontent.com/62634760/106413382-4c684400-648d-11eb-9c58-5b7b8dd1131e.PNG)
+
 
