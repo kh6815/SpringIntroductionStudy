@@ -400,7 +400,7 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
 ![캡처](https://user-images.githubusercontent.com/62634760/106411829-87687880-6489-11eb-8264-a14f973965cb.PNG)
 ![캡처1](https://user-images.githubusercontent.com/62634760/106411833-8899a580-6489-11eb-8b78-fed825be9089.PNG)
 
- -로직 분석
+ - 로직 분석
    -DiscountService는 Map으로 모든 DiscountPolicy를 주입받는다. 이때 fixDiscountPolicy, reateDiscountPolicy가 주입된다.
  
  - 주입 분석
