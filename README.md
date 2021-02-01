@@ -495,13 +495,24 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
  - 웹 스코프는 웹 환경에서만 동작한다.
  - 웹 스코프는 프로토타입과 다르게 스프링이 해당 스코프의 종료시점까지 관리한다. 따라서 종료 메서드가
 호출된다.
+  
+  ![캡처](https://user-images.githubusercontent.com/62634760/106417058-69554500-6496-11eb-8596-a94dce6a5234.PNG)
 
 
  - request 스코프는 스프링 컨테이너가 생성될 때 의존관계주입이 되는게 아니라 요청이 들어왔을 때만 의존관계주입이 됨으로 service단에서 MyLogger불러 쓸때 문제가 생긴다.
  - 이를 해결하기 위해 Proxy를 사용하여 가짜 프록시 객체를 생성하고 미리 주입을 해둔다.
  - MyLogger, , LogDemoService, LogDemoController를 통해 알아보자
    - MyLogger
+     
+     ![logger](https://user-images.githubusercontent.com/62634760/106417059-6a867200-6496-11eb-8ba9-77039b63470e.PNG)
+     ![logger1](https://user-images.githubusercontent.com/62634760/106417060-6b1f0880-6496-11eb-9cca-ab43c9ec532b.PNG)
 
    - LogDemoService
 
+     ![service](https://user-images.githubusercontent.com/62634760/106417061-6b1f0880-6496-11eb-91e8-b924dba96342.PNG)
+
    - LogDemoController
+
+     ![controller](https://user-images.githubusercontent.com/62634760/106417062-6bb79f00-6496-11eb-80f7-a35c6827df20.PNG)
+     ![controller2](https://user-images.githubusercontent.com/62634760/106417063-6bb79f00-6496-11eb-94cb-e3273c946945.PNG)
+
