@@ -282,12 +282,14 @@ Tip
 AppConfig, TestConfig 등 앞서 만들어두었던 설정 정보도 함께 등록되고, 실행되어 버린다. 그래서
 excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서 제외했다. 보통 설정 정보를 컴포넌트
 스캔 대상에서 제외하지는 않지만, 기존 예제 코드를 최대한 남기고 유지하기 위해서 이 방법을 선택했다.
-
+  
+  ![캡처](https://user-images.githubusercontent.com/62634760/106407306-1623c800-647f-11eb-8f7b-8634195cbc43.PNG)
 
 
 - 컴포넌트 스캔은 이름 그대로 @Component 애노테이션이 붙은 클래스를 스캔해서 스프링 빈으로 등록한다.
 - 스프링 빈으로 등록하고싶은 클래스(AppConfig에 Bean으로 등록했던 클래스들)에 @Component를 붙여주고, DI가 필요한 객체에 @Autowired를 해준다.
-
+  
+  ![캡처1](https://user-images.githubusercontent.com/62634760/106407311-1754f500-647f-11eb-8486-2e398b86f45e.PNG)
 
 
 
@@ -306,9 +308,15 @@ excludeFilters 를 이용해서 설정정보는 컴포넌트 스캔 대상에서
   - excludeFilters : 컴포넌트 스캔에서 제외할 대상을 지정
 
   - 먼저 명확한 인식을 위해 추가, 제외 애노테이션을 만들기
-
+    
+    ![캡처2](https://user-images.githubusercontent.com/62634760/106407313-1754f500-647f-11eb-813d-9ab7f82a5686.PNG)
+    ![캡처2-1](https://user-images.githubusercontent.com/62634760/106407315-17ed8b80-647f-11eb-893f-fa331025ed02.PNG)
 
   - 컴포넌트 스캔 대상에 추가할 클래스에 @MyIncludeComponent, 제외할 클래스에 @MyExcludeComponent를 적용
-
+    
+    ![캡처2-2](https://user-images.githubusercontent.com/62634760/106407317-17ed8b80-647f-11eb-9ead-e4881b0de744.PNG)
+    ![캡처2-3](https://user-images.githubusercontent.com/62634760/106407319-18862200-647f-11eb-904a-c6b433b6430f.PNG)
 
   - Test부분에서 설정파일을 만들고 만들어둔 애노테이션 클래스를 제외시킨다.
+
+    ![캡처2-4](https://user-images.githubusercontent.com/62634760/106407321-18862200-647f-11eb-93e6-82885e9709d2.PNG)
