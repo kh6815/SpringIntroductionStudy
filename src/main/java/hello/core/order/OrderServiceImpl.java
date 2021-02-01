@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService{
     @Autowired private DiscountPolicy discountPolicy; //구체화에 의존하지 않고 추상화에만 의존하고 있다. 잘된 설
     @Autowired private MemberRepository memberRepository; //final은 무조건 값이 있어야한다. 지금은 생성자에서 값을 넣어주고 있다.*/
 
-    private final DiscountPolicy discountPolicy; //구체화에 의존하지 않고 추상화에만 의존하고 있다. 잘된 설
+    private final DiscountPolicy discountPolicy; //구체화에 의존하지 않고 추상화에만 의존하고 있다. 잘된 설계
     private final MemberRepository memberRepository;
 
     /*

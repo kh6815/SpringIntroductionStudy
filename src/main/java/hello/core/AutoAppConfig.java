@@ -10,6 +10,7 @@ import org.springframework.context.annotation.FilterType;
 @Configuration
 @ComponentScan(//ComponentScan - 컴포넌트 스캔은 이름 그대로 @Component 애노테이션이 붙은 클래스를 스캔해서 스프링 빈으로 등록한다.
 
+        // 모든 자바 클래스를 다 컴포넌트 스캔하면 시간이 오래 걸린다. 그래서 꼭 필요한 위치부터 탐색하도록 시작위치를 지정할 수 있다.
         basePackages = "hello.core" ,//basePackages는 해당 패키지를 포함해서 하위 패키지 안에서 component를 찾을 수 있게함. , 패키지 수를 두가지 이상 줄 수 도 있음
         basePackageClasses = AutoAppConfig.class, //basePackageClasses는 AutoAppConfig.class가 포함된 hello.core부터 component를 찾게 한다.
         //basePackages, basePackageClasses를 지정하지 않은 디폴트 상태일 때는 ComponentScan를 붙인 클래스가 포함된 패키지부터 스캔한다.(즉 AutoAppConfig면 hello.core부터 )

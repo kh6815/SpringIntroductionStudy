@@ -17,7 +17,9 @@ public class MemberApp {
 
         //ApplicationContext -> 스프링 컨테이너라고 생각하면 된다. //@Bean 등록되어 있는 객체들을 관리해준다.
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
-        MemberService memberService = applicationContext.getBean("memberService", MemberService.class); // 기본적으로 name은 메서드 이름이 등록된다. / 두번째는 타입
+        // 기본적으로 name은 메서드 이름이 등록된다. / 두번째는 타입
+        MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
+
 
         Member member1 = new Member(1L,"최강현", Grade.VIP);
         Member member2 = new Member(2L,"최성현", Grade.BASIC);

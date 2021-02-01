@@ -45,27 +45,25 @@ public class SingletonWithPrototypeTest1 {
     @Scope("singleton") //안해줘도 되지만 확실히 하자는 의미에서 / 원래 싱글톤이 디폴트이기 때문에 생략가능
     @RequiredArgsConstructor //lombok을 통해서 생성자 의존관계를 생략가능
     static class ClientBean{
-
         @Autowired
         private Provider<PrototypeBean> prototypeBeanProvider; //내부적으로 BeanFactory에 넘겨받기 때문에 @Autowired가 필요하다.
-
+        private ObjectProvider<PrototypeBean> prototypeBeanObjectProvider;
         /*
         private final PrototypeBean prototypeBean; //생성시점에 주입
-
         /* //@RequiredArgsConstructor으로 생성자 생략가능
         @Autowired //이것도 생성자 하나임으로 생략가능
         public ClientBean(PrototypeBean prototypeBean) {
             this.prototypeBean = prototypeBean;
         }*/
-
         public int logic(){
             PrototypeBean prototypeBean = prototypeBeanProvider.get(); //이때 내부에서 스프링 컨테이너를 통해 ProtortypeBean(해당하는 빈)을 찾아서 가져온다.
+            PrototypeBean object = prototypeBeanObjectProvider.getObject();
+
             prototypeBean.addCount();
             int count = prototypeBean.getCount();
             return count;
         }
     }
-
     @Scope("prototype")
     static class PrototypeBean{
         private int count = 0;

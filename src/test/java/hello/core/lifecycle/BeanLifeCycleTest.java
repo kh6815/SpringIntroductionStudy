@@ -11,7 +11,8 @@ public class BeanLifeCycleTest {
 
     @Test
     public void lifeCycleTest(){
-        ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class); //ConfigurableApplicationContext는 AnnotationConfigApplicationContext의 상위 인터페이스
+        //ConfigurableApplicationContext는 AnnotationConfigApplicationContext의 상위 인터페이스
+        ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class);
         NetworkClient client = ac.getBean(NetworkClient.class); //컨테이너에 만들어진 스프링빈을 가져온다.
         ac.close(); //ac를 닫는다.
     }
